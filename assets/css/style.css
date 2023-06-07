@@ -1,17 +1,116 @@
-.form-white.input-group > .form-control:focus {
-  border-color: #000000;
-  box-shadow: inset 0 0 0 1px #000000;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: #000000;
+.navvbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.75);
+.brand {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
 }
 
-#brand-icon {
-  padding-left: 0.5rem;
+.brand a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+}
+
+.brand-name {
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: x-large;
+}
+
+.menu {
+  margin-left: -100px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 16px 10px 0 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  position: relative;
+}
+
+.dropdown-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.dropdown-text {
+  margin-right: 5px;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 5px 0;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-toggle.active + .dropdown-menu {
+  display: block;
+}
+
+.separator {
+  width: 1px;
+  height: calc(2em + 4px);
+  background-color: #ccc;
+  margin: 0 10px;
 }
