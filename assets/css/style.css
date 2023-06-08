@@ -86,9 +86,16 @@
   cursor: pointer;
 }
 
-.dropdown-menu {
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  background-color: lightgray;
+  transition: line 4s;
+}
+
+.dropdown-content {
   display: none;
   position: absolute;
+  min-width: 20px;
   top: calc(100% + 5px);
   left: 0;
   padding: 10px;
@@ -97,14 +104,29 @@
   z-index: 1;
 }
 
-.dropdown-menu a {
+.dropdown-content a {
   display: block;
   padding: 5px 0;
   text-decoration: none;
   color: #333;
 }
 
-.dropdown-toggle.active + .dropdown-menu {
+.dropdown-item span:hover {
+  text-decoration: underline;
+  color: gray;
+  cursor: pointer;
+}
+
+#dropdown-menu-1 {
+  left: -14px;
+}
+
+#dropdown-menu-2 {
+  right: 10px;
+  left: -70px;
+}
+
+.show {
   display: block;
 }
 
