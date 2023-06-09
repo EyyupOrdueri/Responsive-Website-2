@@ -72,10 +72,10 @@
   position: relative;
 }
 
-.dropdown-item img {
+.dropdown-item i {
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  margin-right: 0px;
 }
 
 .dropdown-text {
@@ -84,12 +84,12 @@
 
 .dropdown-toggle {
   cursor: pointer;
+  transition: linear 0.4s;
 }
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
   background-color: lightgray;
-  transition: line 4s;
 }
 
 .dropdown-content {
@@ -123,7 +123,7 @@
 
 #dropdown-menu-2 {
   right: 10px;
-  left: -70px;
+  left: -83px;
 }
 
 .show {
