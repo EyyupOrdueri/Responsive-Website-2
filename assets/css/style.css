@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0 40px;
+}
+
 /* ===== Navbar ======= */
 
 .navvbar {
@@ -16,7 +20,6 @@
 .brand {
   display: flex;
   align-items: center;
-  margin-left: 20px;
 }
 
 .brand a {
@@ -64,7 +67,6 @@
 .dropdown {
   display: flex;
   align-items: center;
-  margin-right: 20px;
 }
 
 .dropdown-item {
@@ -145,8 +147,6 @@
   color: gray;
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr;
-  /* gap: 10px; */
-  margin: 20px 30px 0 30px;
   border: 1px solid gray;
   border-radius: 2px;
 }
@@ -202,4 +202,52 @@
 .search-item:nth-child(4) button:hover {
   background-color: darkgray;
   color: wheat;
+}
+
+/* ===== Jobs-Partners ======= */
+
+.jobs-partners {
+  color: gray;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.our-partners-head {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 10px;
+  color: #656464;
+}
+
+.post-job-head button {
+  width: 100%;
+  color: white;
+  background-color: #2e56f7;
+  border: 1px solid #0538fa;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.post-job-head button:hover {
+  background-color: #0538fa;
+}
+
+.post-job-head p {
+  font-size: 18;
+  margin-bottom: 0;
+}
+
+.post-job-head span {
+  font-size: 16;
+  color: lightgray;
+}
+
+.post-job-body {
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 20px;
+  color: darkslategray;
 }
