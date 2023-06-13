@@ -74,6 +74,7 @@ body {
   align-items: center;
   margin-left: 10px;
   position: relative;
+  cursor: pointer;
 }
 
 .dropdown-item i {
@@ -87,7 +88,6 @@ body {
 }
 
 .dropdown-toggle {
-  cursor: pointer;
   transition: linear 0.4s;
 }
 
@@ -191,7 +191,6 @@ body {
   height: 100%;
   background-color: black;
   color: white;
-  transition: linear 0.3s;
 }
 
 .search-btn {
@@ -200,8 +199,7 @@ body {
 }
 
 .search-item:nth-child(4) button:hover {
-  background-color: darkgray;
-  color: wheat;
+  opacity: 0.8;
 }
 
 /* ===== Jobs-Partners ======= */
@@ -246,8 +244,17 @@ body {
 }
 
 .post-job-body {
+  padding: 20px;
+  margin-top: 30px;
+  color: darkslategray;
   border: 1px solid lightgray;
   border-radius: 8px;
-  padding: 20px;
-  color: darkslategray;
+}
+
+.post-job-body a {
+  text-decoration: none;
+}
+
+.post-job-body a:hover {
+  text-decoration: underline;
 }
