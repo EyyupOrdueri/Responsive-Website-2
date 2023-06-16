@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+
+    <!--========== FAVICON ==========-->
+    <link rel="icon" href="../img/favicon.png" type="image/png" />
+
+    <!--========== ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--========== BOOTSTRAP ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <title>Our Products</title>
+  </head>
+  <body>
+    <!--===== Navbar =======-->
+    <nav class="navvbar">
+      <div class="brand">
+        <a href="../../index.html">
+          <img src="../img/logo.png" alt="Logo" />
+          <span class="brand-name">CoinMarketJob</span>
+        </a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">All Jobs</a></li>
+          <li><a href="#">Post a Job</a></li>
+          <li><a href="#">Employers</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown-item dropdown-toggle" onclick="toggleMenu1()">
+          <i class="fa-solid fa-user"></i>
+          <span class="dropdown-text">Job Seekers</span>
+          <i class="fa-solid fa-angle-down"></i>
+          <div id="dropdown-menu-1" class="dropdown-content">
+            <a href="#">Log In</a>
+            <a href="#">Create your Profile</a>
+          </div>
+        </div>
+        <div class="separator"></div>
+        <div class="dropdown-item">
+          <i class="fa-solid fa-building"></i>
+          <span class="dropdown-text">Employers</span>
+          <i
+            class="fa-solid fa-angle-up dropdown-toggle"
+            onclick="toggleMenu2()"
+          ></i>
+          <div id="dropdown-menu-2" class="dropdown-content">
+            <a href="#">Log In</a>
+            <a href="#">Create Employer Account</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--===== Our Products =======-->
+
+    <div class="our-products">
+      <h2>Our Products</h2>
+      <div class="products">
+        <div class="product">
+          <div class="pro-content">
+            <h4>Single Job Posting</h4>
+            <div>
+              <p><b># of jobs</b> 1 | <b>Job Posting Length: </b> 30 Days</p>
+            </div>
+          </div>
+          <div class="pro-price">
+            <p><span>$150.00</span></p>
+            <button>
+              <a href="#">
+                <i class="fas fa-file-alt" aria-hidden="true"></i>
+                <p>Post Job</p>
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="pro-content">
+            <h4>5 Job Pack</h4>
+            <div>
+              <p><b># of jobs</b> 5 | <b>Job Posting Length: </b> 30 Days</p>
+            </div>
+            <div>
+              <p><b>Expires: </b> Never</p>
+            </div>
+          </div>
+          <div class="pro-price">
+            <p><span>$699.00</span></p>
+            <button>
+              <a href="#">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                <p>Purchase</p>
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/app1.js"></script>
+  </body>
+</html>
