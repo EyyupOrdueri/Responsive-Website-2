@@ -259,3 +259,37 @@ body {
 .post-job-body a:hover {
   text-decoration: underline;
 }
+
+/* ===== Footer ======= */
+
+footer {
+  padding: 100px 0 60px 0;
+  font-size: 14px;
+}
+
+.footer-links {
+  margin-top: -16px;
+  margin-left: -37px;
+  /* margin-bottom: 60px; */
+}
+
+.footer-links ul {
+  padding-left: -270px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links li {
+  list-style: none;
+  padding: 0 5px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: rgb(169, 165, 165);
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: black;
+}
