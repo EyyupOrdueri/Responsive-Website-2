@@ -1,0 +1,7 @@
+.post-job-body {
+  padding: 20px;
+  /* margin-top: 300px; */
+  color: darkslategray;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
