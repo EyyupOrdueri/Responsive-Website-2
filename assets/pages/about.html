@@ -68,36 +68,49 @@
       </div>
     </nav>
 
-    <!--===== Jobs-Partners =======-->
+    <!--===== Main About =======-->
     <div class="jobs-partners">
       <div class="our-partners">
-        <div class="our-partners-head"><h2>About</h2></div>
+        <div class="our-partners-head" id="about-main-div">
+          <h2 id="about-h2">About</h2>
+          <div class="our-partners-body">
+            <p>
+              CoinMarketJob is the world’s most trusted and accurate source of
+              data for cryptocurrencies. Used by millions of individuals,
+              organizations, and exchanges, CoinMarketJob brings the most
+              up-to-date market capitalizations, pricing, and cryptocurrency
+              information to our users.
+            </p>
+          </div>
+        </div>
       </div>
       <div class="post-job">
-        <div class="post-job-body">
-          <h4>Welcome!</h4>
-          <p>Welcome to the CoinMarketJob board!</p>
-          <br />
-          <p>
-            This is the official job board of CoinMarketJob, leveraging an
-            auidence of over 5 million users each month to help you get your job
-            vacanies filled.
-          </p>
-          <b><p>Save money with job packs.</p></b>
-          <p>Buy multiple listings at once and save money.</p>
-          <ul>
-            <li>
-              <p>
-                <b><a href="#">Single Job:</a></b> <b>$150</b>
-              </p>
-            </li>
-            <li>
-              <p>
-                <b><a href="#">5 Job Pack:</a></b> <b>$699</b>
-              </p>
-            </li>
-          </ul>
-          <p>Job Packs never expire. Buy now and use them whenever you like.</p>
+        <div class="post-job-body" id="about-body">
+          <h5>Sign up for Job Alerts</h5>
+          <div id="job_alert_form_container">
+            <form id="new_job_alert">
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="Email Address"
+              />
+              <input type="text" name="keywords" id="" placeholder="Keywords" />
+              <input type="text" name="location" id="" placeholder="Location" />
+              <div class="checkbox">
+                <label for="">
+                  <input type="checkbox" name="" id="" />
+                  I acknowledge that I have read and understand the
+                  <a target="_blank" href="#">Privacy Policy </a>
+                </label>
+              </div>
+
+              <button type="submit">
+                <i class="fas fa-envelope"></i>
+                <p>Create Alert</p>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

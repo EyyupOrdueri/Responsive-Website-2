@@ -1,7 +1,49 @@
-.post-job-body {
+/* ===== About ======= */
+
+#about-h2 {
+  color: black;
+  font-size: 48px;
+  font-weight: 300;
+}
+
+#about-main-div {
   padding: 20px;
-  /* margin-top: 300px; */
-  color: darkslategray;
-  border: 1px solid lightgray;
+}
+
+#about-main-div {
+  font-size: 14px;
+  color: black;
+}
+
+#about-body {
+  margin-top: 0;
+}
+
+#about-body input {
+  width: 100%;
+}
+
+#new_job_alert input {
+  padding: 5px 12px;
+  margin: 10px 0px;
+}
+
+.checkbox input {
+  cursor: pointer;
+  height: 12px;
+}
+.checkbox label {
+  font-size: 8.5px;
+}
+
+#new_job_alert button {
+  background-color: black;
+  color: white;
+  width: 100%;
   border-radius: 8px;
+  padding: 9px 18px;
+}
+
+#new_job_alert button:hover {
+  opacity: 0.8;
 }
